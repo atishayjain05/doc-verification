@@ -1,4 +1,4 @@
-const CONTRACT_ADDRESS = "0xa75aB5f6358CEabBEE5d90B7915BeBD8735D3927";
+const CONTRACT_ADDRESS = "0xd9145CCE52D386f254917e481eB44e9943F39138";
 
 const ABI = [
   "function registerDocument(bytes32 hash, address holder, string title, string holderName, string enrollmentNo, string ipfsCid) public",
@@ -30,4 +30,5 @@ async function uploadToPinata(file, PINATA_JWT) {
   if (!res.ok) throw new Error("Pinata upload failed");
   const result = await res.json();
   return result.IpfsHash;
+
 }
