@@ -1,0 +1,21 @@
+await tx.wait();
+document.getElementById("issuerOutput").innerText = "✅ Document registered!";
+loadIssuerDocs();
+}
+
+<td>${!d.revoked && d.issuer.toLowerCase() === userAddress.toLowerCase()
+
+const ipfsCid = await uploadToPinata(file, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJjM2Q0OTk0Yy0yNTM1LTQ1NDUtYmYxYy0zOTI5MmUwNjM3ODAiLCJlbWFpbCI6ImNoYXVoYW5zaHViaDQ1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6IkZSQTEifSx7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6Ik5ZQzEifV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiI2NmI5ZWIwZGMxM2JlODI5ZGE5YyIsInNjb3BlZEtleVNlY3JldCI6IjIwMGFlZTY5Njc5ODBlNmYzNTA5M2JmYjRjYjY1MjMzZDVmZTY3YjI2YTIxMTljYjgyNzczNjk2ZTBiMjM4ZDYiLCJleHAiOjE3OTAxNzAyODR9.XcQ7DLm6SJL7LTlCK7USQX7mP5UaAOUW5p7K_jJKGo");
+
+async function revokeDoc(hash) {
+  try {
+    const signerContract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+    const tx = await signerContract.revokeDocument(hash);
+    await tx.wait();
+    alert("Document revoked!");
+    loadIssuerDocs();
+  } catch (err) {
+    console.error(err);
+    alert("Error revoking document: " + err.message);
+  }
+}

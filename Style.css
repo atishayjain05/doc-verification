@@ -1,0 +1,76 @@
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background: #f9fafc;
+color: #333;
+}
+header {
+background: #3498db;
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 22px;
+font-weight: bold;
+}
+.container {
+max-width: 900px;
+margin: 20px auto;
+padding: 20px;
+}
+.section {
+background: white;
+border-radius: 10px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+h2 {
+margin-top: 0;
+color: #2c3e50;
+}
+input[type="text"], input[type="file"] {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ddd;
+border-radius: 6px;
+}
+button {
+display: inline-block;
+padding: 10px 15px;
+border: none;
+border-radius: 6px;
+background: #3498db;
+color: white;
+cursor: pointer;
+font-size: 14px;
+margin-top: 10px;
+}
+button:hover {
+background: #2980b9;
+}
+table {
+border-collapse: collapse;
+width: 100%;
+margin-top: 10px;
+}
+table, th, td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
+th {
+background: #3498db;
+color: white;
+}
+td {
+background: #f9f9f9;
+}
+pre {
+white-space: pre-wrap;
+word-break: break-word;
+background: #f4f6f9;
+padding: 10px;
+border-radius: 6px;
+}
